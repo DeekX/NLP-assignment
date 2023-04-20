@@ -73,6 +73,9 @@ int main() {
             mp2[y]+=x[y]>0;
         }
     }
+    for(auto &x : mp2)
+        cout<<x.first<<" : "<<x.second<<'\n';
+    cout<<"-------------------------------\n";
     inc = 0;
     vector<map<string,double>>lastPart(4);
     for(auto &x : mp2) {
